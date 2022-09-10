@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title> Животные </title>
+    <style>
+        h2 {
+            color: #2C2A4A;
+        }
+    </style>
+</head>
+
+<body bgcolor=#b1faf3>
+    <h1 align="center">Недавно к нам привезли очень красивого тигра</h1>
+     <a href="https://mirplaneta.ru/zhivotnoe-tigr.html"><img src="https://mirplaneta.ru/images/5/721.jpg" title="Тигр"
+             alt="Тут был тигр"  width="150px" ></a>
+</body>
