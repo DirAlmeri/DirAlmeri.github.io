@@ -16,10 +16,12 @@
         }
         </style>
         <title> Homework </title>
+
+        
 </head>
 
 <body bgcolor=#DABFFF>
-    <h1 align="center"><a name:"top"></a> Homework </h1>
+    <h1 align="center"> Homework </h1>
     <h2 align="center"> Сделано дибилами ...</h2>
     <p id="id1"> Answers to tasks are equivalent to their number in the list from the document. Any overlap with other
         homeworks is purely coincidental. </p>
@@ -95,61 +97,54 @@
         <li><a href="/index.html">главная</a></li>
     <!-- 21) сокращенную ссылку на внутреннюю. -->
         <li>
-            <a href="#top">внутренняя</a>
+            <a href="#form">внутренняя</a>
         </li>
     </ol>
     
 <br>
-<form action="/" method="POST">
+<form action="/" method="POST"> <a name="form"></a>
     
     <p>
-        <h3><label for="UserName">Имя пользователя:
-        <input id="UserName" type="text" placeholder="Введите имя" required>
-        </label></h3>
+        <h3><label for="UserName">Имя пользователя:</label></h3>
+        <input id="UserName" type="text" placeholder="Введите имя" name="UserName" required>
     </p>
 
     <p>
-    <h3><label for="userEmail">Email:
-    <input id="userEmail" type="email" placeholder="Введите почту" required>
-    </label></h3>
+    <h3><label for="userEmail">Email:</label></h3>
+    <input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required>
     </p>
     
     <p>
-        <h3><label for="date">Дата рождения:
-        <input id="date" type="date" required>
-        </label></h3>
+        <h3><label for="date">Дата рождения:</label></h3>
+        <input id="date" type="date" name="UserDate" required>
     </p>
 
     <p>
         <h3>Пол:</h3>
-        <label for="man"><input type="radio" id="man" name="gender" required>
-        Мужской</label><br>
-        <label for="woman"><input type="radio" id="woman" name="gender" required>
-        Женский</label><br>
-        <label for="No"><input type="radio" id="No" name="gender" required>
-        Не определён</label><br>
+        <input type="radio" id="man" name="gender" required>
+        <label for="man">Мужской</label><br>
+        <input type="radio" id="woman" name="gender" required>
+        <label for="woman">Женский</label><br>
+        <input type="radio" id="No" name="gender" required>
+        <label for="No">Не определён</label><br>
     
     </p>
 
     <p>
         <h3>Количество конечностей:</h3>
-        <label for="1-">
         <input type="radio" id="1-" name="limbs" required>
-        1</label> <br>
-        <label for="2-">
+        <label for="1-">1</label> <br>
         <input type="radio" id="2-" name="limbs" required>
-        2</label> <br>
-        <label for="3-">
+        <label for="2-">2</label> <br>
         <input type="radio" id="3-" name="limbs" required>
-        3</label> <br>
-        <label for="4-">
+        <label for="3-">3</label> <br>
         <input type="radio" id="4-" name="limbs" required>
-        4</label> <br>
+        <label for="4-">4</label> <br>
     </p>
 
     <p>
-        <h3><label for="superpowers">Сверхспособности:
-        <select id="superpowers" name="">
+        <h3><label for="superpowers">Сверхспособности:</label></h3>
+        <select id="superpowers" name="superpower">
         <option value="Missing">Отсутствуют</option>
         <option value="Immortality">Бессмертие</option >
         <option value="Passing">Прохождение сквозь стены</option>
@@ -158,17 +153,16 @@
         <option value="imposible">Успевать сдавать дедлайн</option>
         <option value="joy">Радоваться</option>
         <option value="regeneration">Регенерация</option>
-        </select></label></h3>
+        </select>
     </p>
 
     <h3><label for="introduction">С контрактом ознакомлен(а)
-    <input type="checkbox" id="introduction" name="introduction" required></label></h3>
-    
+    <input type="checkbox" id="introduction" name="introduction" required>
+    </label></h3>
 
     <p>
-        <h3><label for="bio">Биография:
-        <textarea name="" id="bio" cols="30" rows="10" placeholder="Введите биографию"> Я заебался... </textarea>
-        </label></h3>
+        <h3><label for="bio">Биография:</label></h3>
+        <textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"> Я заебался... </textarea>
     </p>
     
     <input type="submit" value="Отправить" />
@@ -177,6 +171,4 @@
 </form>
 
     <div id="bottom"></div>
-</body>
-
-
+</body> 
