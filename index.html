@@ -19,8 +19,8 @@
 </head>
 
 <body bgcolor=#DABFFF>
-    <h1 align="center"> Homework </h1>
-    <h2 align="center"> Сделано дибилами ... </h2>
+    <h1 align="center"><a name:"top"></a> Homework </h1>
+    <h2 align="center"> Сделано дибилами ...</h2>
     <p id="id1"> Answers to tasks are equivalent to their number in the list from the document. Any overlap with other
         homeworks is purely coincidental. </p>
     <ol>
@@ -56,7 +56,7 @@
                 something</a> </li>
     <!-- 12) запрещенную для индексации поисковиками; -->
         <li>
-            <noindex> <a href="https://vk.com/ssilviaf">Not allowed to be indexed</a> </noindex>
+            <noindex> <a href="https://vk.com/d81920">Not allowed to be indexed</a> </noindex>
         </li>
     <!-- 13) контекстную в тексте абзаца; -->
         <li>
@@ -69,20 +69,114 @@
     <!-- 15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map); -->
         <li>
             <h4>Нажми на нос</h4>
-            <img src="https://cdn.ecommercedns.uk/files/5/229105/3/5327343/42085-a1.jpg" alt="ERROR"  usemap="#tilt" width="300px"></li>
+            <img src="https://cdn.ecommercedns.uk/files/5/229105/3/5327343/42085-a1.jpg" alt="ERROR"  usemap="#tilt" width="150px"></li>
             
             <map name="tilt">
-            <area shape="circle" coords="140,225,27" href="https://content.foto.my.mail.ru/mail/kemova54/_blogs/i-28387.jpg" alt="ERROR">
+            <area shape="circle" coords="70,113,14" href="https://content.foto.my.mail.ru/mail/kemova54/_blogs/i-28387.jpg" alt="ERROR">
         </map></li>
     <!-- 16) относительную на страницу в текущем каталоге; -->
+        <li>
+            <a href="./tilt">в текущем</a>
+        </li>
 
     <!-- 17) относительную на страницу в каталоге about; -->
-
-
-
-
-
-    
+        <li>
+            <a href="about">About</a>
+        </li>
+    <!-- 18) относительную на страницу в каталоге уровнем выше текущего; -->
+        <li>
+            <a href="../io">1 уровень</a>
+        </li>
+    <!-- 19) относительную на страницу в каталоге двумя уровнями выше; -->
+        <li>
+            <a href="../../tip">2 уровня</a>
+        </li>
+    <!-- 20) сокращенную на главную; -->
+        <li><a href="/index.html">главная</a></li>
+    <!-- 21) сокращенную ссылку на внутреннюю. -->
+        <li>
+            <a href="#top">внутренняя</a>
+        </li>
     </ol>
+    
+<br>
+<form action="/" method="POST">
+    
+    <p>
+        <h3><label for="UserName">Имя пользователя:
+        <input id="UserName" type="text" placeholder="Введите имя" required>
+        </label></h3>
+    </p>
+
+    <p>
+    <h3><label for="userEmail">Email:
+    <input id="userEmail" type="email" placeholder="Введите почту" required>
+    </label></h3>
+    </p>
+    
+    <p>
+        <h3><label for="date">Дата рождения:
+        <input id="date" type="date" required>
+        </label></h3>
+    </p>
+
+    <p>
+        <h3>Пол:</h3>
+        <label for="man"><input type="radio" id="man" name="gender" required>
+        Мужской</label><br>
+        <label for="woman"><input type="radio" id="woman" name="gender" required>
+        Женский</label><br>
+        <label for="No"><input type="radio" id="No" name="gender" required>
+        Не определён</label><br>
+    
+    </p>
+
+    <p>
+        <h3>Количество конечностей:</h3>
+        <label for="1-">
+        <input type="radio" id="1-" name="limbs" required>
+        1</label> <br>
+        <label for="2-">
+        <input type="radio" id="2-" name="limbs" required>
+        2</label> <br>
+        <label for="3-">
+        <input type="radio" id="3-" name="limbs" required>
+        3</label> <br>
+        <label for="4-">
+        <input type="radio" id="4-" name="limbs" required>
+        4</label> <br>
+    </p>
+
+    <p>
+        <h3><label for="superpowers">Сверхспособности:
+        <select id="superpowers" name="">
+        <option value="Missing">Отсутствуют</option>
+        <option value="Immortality">Бессмертие</option >
+        <option value="Passing">Прохождение сквозь стены</option>
+        <option value="Levitation">Левитация</option >
+        <option value="hell">Дискретка на 5</option >
+        <option value="imposible">Успевать сдавать дедлайн</option>
+        <option value="joy">Радоваться</option>
+        <option value="regeneration">Регенерация</option>
+        </select></label></h3>
+    </p>
+
+    <h3><label for="introduction">С контрактом ознакомлен(а)
+    <input type="checkbox" id="introduction" name="introduction" required></label></h3>
+    
+
+    <p>
+        <h3><label for="bio">Биография:
+        <textarea name="" id="bio" cols="30" rows="10" placeholder="Введите биографию"> Я заебался... </textarea>
+        </label></h3>
+    </p>
+    
+    <input type="submit" value="Отправить" />
+    
+    <!-- <button>КНОПКА ДЛЯ БЛЯДСКОЙ ОТПРАВКИ 2</button> -->
+</form>
+
     <div id="bottom"></div>
 </body>
+
+
