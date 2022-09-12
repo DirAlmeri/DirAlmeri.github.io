@@ -98,11 +98,11 @@
     <hr><h2>Бланк регистрации</h2><hr>
     <br>
     <form action="/" method="POST"> <a id="form"></a>
-        <h3><label for="UserName">Имя пользователя:</label></h3>
+        <label for="UserName">Имя пользователя:</label>
         <input id="UserName" type="text" placeholder="Введите имя" name="UserName" required>
-        <h3><label for="userEmail">Email:</label></h3>
+        <label for="userEmail">Email:</label>
         <input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required>
-        <h3><label for="date">Дата рождения:</label></h3>
+        <label for="date">Дата рождения:</label>
         <input id="date" type="date" name="UserDate" required>
         <h3>Пол:</h3>
         <input type="radio" id="man" name="gender" required>
@@ -118,18 +118,18 @@
         <label for="3-">3</label> <br>
         <input type="radio" id="4-" name="limbs" required>
         <label for="4-">4</label> <br>
-        <h3><label for="superpowers">Сверхспособности:</label></h3>
+        <label for="superpowers">Сверхспособности:</label>
         <select id="superpowers" name="superpower">
             <option value="Missing">Отсутствуют</option>
             <option value="Immortality">Бессмертие</option>
             <option value="Passing">Прохождение сквозь стены</option>
             <option value="Levitation">Левитация</option>
         </select>
-            <h3><label for="bio">Биография:</label></h3>
+            <label for="bio">Биография:</label>
             <textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"></textarea>
-        <h3><label for="introduction">С контрактом ознакомлен(а)
+        <label for="introduction">С контрактом ознакомлен(а)
             <input type="checkbox" id="introduction" name="introduction" required>
-        </label></h3>
+        </label>
 
         <input type="submit" value="Отправить" />
 
