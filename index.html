@@ -98,18 +98,18 @@
     <hr><h2>Бланк регистрации</h2><hr>
     <br>
     <form action="/" method="POST"> <a id="form"></a>
-        <h3><label for="UserName">Имя пользователя:</label><br></h3>
+        <b><label for="UserName">Имя пользователя:</label></b><br>
         <input id="UserName" type="text" placeholder="Введите имя" name="UserName" required><br>
         <label for="userEmail">Email:</label><br>
         <input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required><br>
-        <label for="date">Дата рождения:</label><br>
+        <b><label for="date">Дата рождения:</label></b><br>
         <input id="date" type="date" name="UserDate" required><br>
-        Пол:<br>
+        <b>Пол:</b><br>
         <input type="radio" id="man" name="gender" required>
         <label for="man">Мужской</label><br>
         <input type="radio" id="woman" name="gender" required>
         <label for="woman">Женский</label><br>
-        Количество конечностей:<br>
+        <b>Количество конечностей:</b><br>
         <input type="radio" id="1-" name="limbs" required>
         <label for="1-">1</label> <br>
         <input type="radio" id="2-" name="limbs" required>
@@ -118,18 +118,18 @@
         <label for="3-">3</label> <br>
         <input type="radio" id="4-" name="limbs" required>
         <label for="4-">4</label> <br>
-        <label for="superpowers">Сверхспособности:</label><br>
+        <b><label for="superpowers">Сверхспособности:</label></b><br>
         <select id="superpowers" name="superpower">
             <option value="Missing">Отсутствуют</option>
             <option value="Immortality">Бессмертие</option>
             <option value="Passing">Прохождение сквозь стены</option>
             <option value="Levitation">Левитация</option>
         </select><br>
-            <label for="bio">Биография:</label><br>
+            <b><label for="bio">Биография:</label></b><br>
             <textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"></textarea><br>
-        <label for="introduction">С контрактом ознакомлен(а)<br>
+        <b><label for="introduction">С контрактом ознакомлен(а)<br>
             <input type="checkbox" id="introduction" name="introduction" required>
-        </label><br>
+        </label></b><br>
 
         <input type="submit" value="Отправить" />
 
