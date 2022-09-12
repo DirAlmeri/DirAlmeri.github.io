@@ -98,18 +98,18 @@
     <hr><h2>Бланк регистрации</h2><hr>
     <br>
     <form action="/" method="POST"> <a id="form"></a>
-        <label for="UserName">Имя пользователя:</label>
-        <input id="UserName" type="text" placeholder="Введите имя" name="UserName" required>
-        <label for="userEmail">Email:</label>
-        <input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required>
-        <label for="date">Дата рождения:</label>
-        <input id="date" type="date" name="UserDate" required>
-        <h3>Пол:</h3>
+        <label for="UserName">Имя пользователя:</label><br>
+        <input id="UserName" type="text" placeholder="Введите имя" name="UserName" required><br>
+        <label for="userEmail">Email:</label><br>
+        <input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required><br>
+        <label for="date">Дата рождения:</label><br>
+        <input id="date" type="date" name="UserDate" required><br>
+        Пол:<br>
         <input type="radio" id="man" name="gender" required>
         <label for="man">Мужской</label><br>
         <input type="radio" id="woman" name="gender" required>
         <label for="woman">Женский</label><br>
-        <h3>Количество конечностей:</h3>
+        Количество конечностей:<br>
         <input type="radio" id="1-" name="limbs" required>
         <label for="1-">1</label> <br>
         <input type="radio" id="2-" name="limbs" required>
@@ -118,18 +118,18 @@
         <label for="3-">3</label> <br>
         <input type="radio" id="4-" name="limbs" required>
         <label for="4-">4</label> <br>
-        <label for="superpowers">Сверхспособности:</label>
+        <label for="superpowers">Сверхспособности:</label><br>
         <select id="superpowers" name="superpower">
             <option value="Missing">Отсутствуют</option>
             <option value="Immortality">Бессмертие</option>
             <option value="Passing">Прохождение сквозь стены</option>
             <option value="Levitation">Левитация</option>
-        </select>
-            <label for="bio">Биография:</label>
-            <textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"></textarea>
-        <label for="introduction">С контрактом ознакомлен(а)
+        </select><br>
+            <label for="bio">Биография:</label><br>
+            <textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"></textarea><br>
+        <label for="introduction">С контрактом ознакомлен(а)<br>
             <input type="checkbox" id="introduction" name="introduction" required>
-        </label>
+        </label><br>
 
         <input type="submit" value="Отправить" />
 
