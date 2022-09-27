@@ -7,7 +7,7 @@
 html {
 	background-color: #ba6f54; /* цвет */
 	color: white; /* цвет любых слов, кроме ссылок */
-	font-family: 'Open Sans', sans-serif; /* шрифты */
+	font-family: 'Open Sans', sans-serif; /* шрифт */
 }
 
 /* верхняя шапка */
@@ -34,9 +34,10 @@ html {
 }
 
 #nav ul {
+	display: flex; /* !!! */
 	flex-direction: column;
 	justify-content: center; /* выравнивание по центру */
-	display: flex; /* !!! */
+	align-items: center;
 	list-style: none; /* маркер списка */
 	font-size: 50px; /* размер слов */
 
