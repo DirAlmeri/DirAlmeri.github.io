@@ -39,13 +39,13 @@ html {
 	list-style: none; /* маркер списка */
 	font-size: 50px; /* размер слов */
 	flex-direction: column;
-	
+
 }
 
 /* в основном ссылки */
 #header, #hyperlinks {
 	margin-bottom: 20px; /* отступ снизу*/
-	padding: 6vw; /* отступы и поля */
+	padding: 4vw; /* отступы и поля */
 }
 
 #hyperlinks {
@@ -55,9 +55,11 @@ html {
 
 /* таблица */
 table {
+	display: flex;
 	border: 8px solid #F2B996; /* рамка и ее цвет */
 	text-align: center; /* выравнивание текста */
 	border-collapse: collapse; /* внутринние границы в таблице */
+	flex: 1;
 	order: 2; /* порядок */
 }
 
@@ -79,9 +81,11 @@ tr:nth-child(even) {
 /* форма */
 
 #form {
+	display: flex;
 	background-color: #F2B996; /* цвет */
 	border: 8px solid #f7b186; /* цвет */
 	margin: 0 auto; /* отступы */
+	flex: 1;
 	order: 1; /* порядок в выводе */
 }
 
