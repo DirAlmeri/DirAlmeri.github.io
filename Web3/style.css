@@ -35,17 +35,17 @@ html {
 
 #nav ul {
 	display: flex; /* !!! */
-	gap: 14vw;
 	justify-content: center; /* расположение контейнера */
 	list-style: none; /* маркер списка */
-	font-size: 30px; /* размер слов */
+	font-size: 50px; /* размер слов */
 	flex-direction: column;
+	
 }
 
 /* в основном ссылки */
 #header, #hyperlinks {
 	margin-bottom: 20px; /* отступ снизу*/
-	padding: 2vw; /* отступы и поля */
+	padding: 4vw; /* отступы и поля */
 }
 
 #hyperlinks {
@@ -114,6 +114,12 @@ a:hover {
 @media screen and (min-width: 1200px) { /* !!! */
 	#nav ul{
 		flex-direction: row; /* вывод горизонтально */
+		justify-content: space-between;	
+		font-size: 30px;
+	}
+
+	#header, #hyperlinks {
+		padding: 2vw; /* отступы и поля */
 	}
 
 	#tabl {
