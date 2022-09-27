@@ -1,0 +1,132 @@
+/* основа */
+* { /* изначальные настройки, коткорые убира.т грань с боков*/
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #ba6f54; /* цвет */
+	color: white; /* цвет любых слов, кроме ссылок */
+	font-family: 'Open Sans', sans-serif; /* шрифт */
+}
+
+/* верхняя шапка */
+#header {
+	background-color: #F0D2BB; /* цвет */
+	font-size: 24px; /* размер слов */
+}
+
+.header_name {
+	padding-top: 45px; /* отступ сверху */
+}
+
+.logo {
+	width: 6em;
+	float: left; /* расположение */
+	padding-right: 20px; /* отступ справа */
+}
+
+/* навигация */
+#nav {
+	background-color: #F2B996; /* цвет */
+	border: 8px solid #f7b186; /* рамка и ее цвет */
+	padding: 15px; /* отстпы и поля */
+	margin-bottom: 20px; /* отсуп снизу */
+}
+
+#nav ul {
+	display: flex; /* !!! */
+	gap: 14vw;
+	justify-content: center; /* расположение контейнера */
+	list-style: none; /* маркер списка */
+	font-size: 25px; /* размер слов */
+	
+}
+
+/* в основном ссылки */
+#header, #hyperlinks {
+	margin-bottom: 20px; /* отступ снизу*/
+	padding: 2vw; /* отступы и поля */
+}
+
+#hyperlinks {
+	background-color: #F2B996; /* основной цвет */
+	border: 8px solid #f7b186; /* рамка и ее цвет */
+}
+
+/* таблица */
+table {
+	border: 8px solid #F2B996; /* рамка и ее цвет */
+	text-align: center; /* выравнивание текста */
+	border-collapse: collapse; /* внутринние границы в таблице */
+	order: 2; /* порядок */
+}
+
+td, th {
+	width: 90px; /* длина */
+	height: 120; /* ширина */
+	padding: 5px; /* отступы и поля */
+	font-size: 15px; /* рамер слов */
+}
+
+tr:nth-child(odd) {
+	background-color: #ffd4c1; /* цвет */
+}
+
+tr:nth-child(even) {
+	background-color: #e0ab8b; /* цвет */
+}
+
+/* форма */
+
+#form {
+	background-color: #F2B996; /* цвет */
+	border: 8px solid #f7b186; /* цвет */
+	margin: 0 auto; /* отступы */
+	order: 1; /* порядок в выводе */
+}
+
+/* подвал ссайта */
+#footer {
+	background-color: #F0D2BB;	/* цвет */
+	padding: 10px; /* отступы и поля */
+	margin-top: 20px; /* отступ сверху */
+	font-size: 25px; /* размер слов */
+}
+
+/* дополнительно */
+a {
+	color: white; /* цвет тектса */
+	text-decoration: none; /* убрать линию ссылки */
+	transition: 0.7s ease-in-out; /* мягкий перелив цвета при наведении */
+}
+
+a:hover {
+	color: rgb(131, 0, 0); /* цвет */
+}
+
+.container {
+	max-width: 960px; /* длина */
+	margin: auto; /* отступы */
+	padding: 0;
+}
+
+@media screen and (min-width: 768px) { /* !!! */
+	#nav ul{
+		flex-direction: row; /* вывод горизонтально */
+	}
+
+	#tabl {
+        order: 1; /* порядок в выводе */
+    }
+
+    #form {
+        order: 2; /* порядок в выводе */
+	}
+
+	#container {
+        font-size: 13pt; /* размер слов */
+	}
+
+
+}
