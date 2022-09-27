@@ -1,5 +1,5 @@
 /* основа */
-* { /* изначальные настройки, коткорые убира.т грань с боков*/
+* { /* изначальные настройки, коткорые убирают грань с боков*/
 	margin: 0;
 	padding: 0;
 }
@@ -34,11 +34,11 @@ html {
 }
 
 #nav ul {
+	flex-direction: column;
+	justify-content: center; /* выравнивание по центру */
 	display: flex; /* !!! */
-	justify-content: center; /* расположение контейнера */
 	list-style: none; /* маркер списка */
 	font-size: 50px; /* размер слов */
-	flex-direction: column;
 
 }
 
@@ -80,13 +80,14 @@ tr:nth-child(even) {
 	background-color: #F2B996; /* цвет */
 	border: 8px solid #f7b186; /* цвет */
 	margin: 0 auto; /* отступы */
+	margin-bottom: 20PX;
 }
 
 /* подвал ссайта */
 #footer {
 	background-color: #F0D2BB;	/* цвет */
 	padding: 10px; /* отступы и поля */
-	margin-top: 20px; /* отступ сверху */
+	margin-top: 8px; /* отступ сверху */
 	font-size: 25px; /* размер слов */
 }
 
@@ -102,17 +103,36 @@ a:hover {
 }
 
 .container {
-	max-width: 960px; /* длина */
-	margin: auto; /* отступы */
-	padding: 0;
+	width: 95%;; /* длина */
+	margin: 0 auto; /* отступы */
+	padding: 0; /* отступы и поля */
 
 }
 
+.form-tabl {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexform {
+	order: -1; /* порядок вывода */
+}
+
+#cont {
+	display: flex; 
+}
+/*  */
 @media screen and (min-width: 1200px) { /* !!! */
+	.container {max-width: 960px;}
+	
+	.flexform{
+		order: 0; /* порядок вывода */
+	}
+
 	#nav ul{
 		flex-direction: row; /* вывод горизонтально */
-		justify-content: space-between;	
-		font-size: 30px;
+		justify-content: space-around;	/* расположение кнопок с одинаковым интервалом */
+		font-size: 30px; /* размер буковок */
 	}
 
 	#header, #hyperlinks {
@@ -124,14 +144,3 @@ a:hover {
 	}
 }
 
-@media (max-width: 1200px){
-	#tabl {
-		display: flex;
-		order: 2; /* порядок в выводе */
-	}
-	
-	#form {
-		display: flex;
-		order: 1; /* порядок в выводе */
-	}
-}
