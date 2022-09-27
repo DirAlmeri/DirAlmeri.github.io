@@ -17,11 +17,10 @@ html {
 }
 
 .header_name {
-	padding-top: 45px; /* отступ сверху */
+	padding-top: 50px; /* отступ сверху */
 }
 
 .logo {
-	width: 6em;
 	float: left; /* расположение */
 	padding-right: 20px; /* отступ справа */
 }
@@ -39,8 +38,8 @@ html {
 	gap: 14vw;
 	justify-content: center; /* расположение контейнера */
 	list-style: none; /* маркер списка */
-	font-size: 25px; /* размер слов */
-	
+	font-size: 30px; /* размер слов */
+	flex-direction: column;
 }
 
 /* в основном ссылки */
@@ -109,6 +108,7 @@ a:hover {
 	max-width: 960px; /* длина */
 	margin: auto; /* отступы */
 	padding: 0;
+
 }
 
 @media screen and (min-width: 768px) { /* !!! */
