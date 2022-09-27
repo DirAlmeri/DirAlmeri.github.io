@@ -40,7 +40,7 @@
 				<li>доп навигация сайта:
 					<nav>
 						<ul>
-							<li><a href="#Homework" title="Задания для Веб разработки">Начало сайта</a></li>
+							<li><a href="#header" title="Задания для Веб разработки">Начало сайта</a></li>
 							<li><a href="#form" title="Регистрационная форма">Форма</a></li>
 						</ul>
 					</nav>
@@ -53,7 +53,7 @@
 					<a id="123"></a>
 					<p>Ру́сская <a title="13) контекстную в тексте абзаца" href="https://ru.wikipedia.org/">Википе́дия</a> — русскоязычный раздел Википедии, основанный 11 мая 2001 года.</p>
 				</li>
-				<li> <a href="https://www.gosuslugi.ru/"><img src="https://gorzavod.ru/wp-content/uploads/2021/10/0c6c78404cf1f711608205420.jpg" title="ссылка-изображение" alt="PUTIN" width="150"></a></li>
+				<li> <a href="https://zakazcoffee.ru/"><img src="https://icdn.lenta.ru/images/2022/02/10/19/20220210192446931/pwa_vertical_768_d6a4f60dd689b287869e76e8be504462.jpg" title="ссылка-изображение" alt="Кофе" width="150"></a></li>
 				<li>
 					<img src="https://webgolovolomki.com/wp-content/uploads/2021/01/znimok-ekrana-2021-01-23-o-19.46.15.png" alt="ERROR" usemap="#push" title="ссылки из прямоугольных облостей картинки" width="150" height="100">
 				
@@ -73,74 +73,70 @@
 				<li> <a href="../../index.html">Вернуться на 2 уровень выше</a> </li>
 				<li> <a href="/index.html">главная (сокращенная ссылка)</a> </li>
 				<li> <a href="/Panthera_tigris.html">внутренняя (сокращенная сссылка)</a> </li>
-				<li>
-					Здесь работающие задания 18 и 19:<br>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrG4LdqjAzrh626huumTRZTFtD4g0A2zc_hg&usqp=CAU" alt="ERROR" usemap="#18&19" title="перейти к заданиям 18 и 19" width="100" height="65">
-				
-					<map name="18&19">
-						<area shape="rect" title="перейти к заданиям 18 и 19" coords="5,19,95,45" href="about/teir/navigation.html" alt="ERROR">
-					</map>
-				</li>
 			</ol>
 		</div>
 	</div>
 
-	<table class="container" id="tabl">
-		<tr><th colspan="5">Таблица пифагора</th></tr>
-		<tr><th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th></tr>
-		<tr><td>2</td> <td>4</td> <td>6</td> <td>8</td> <td>10</td></tr>
-		<tr><td>3</td> <td>6</td> <td>9</td> <td>12</td> <td>15</td></tr>
-		<tr><td>4</td> <td>8</td> <td>12</td> <td>16</td> <td>20</td></tr>
-		<tr><td>5</td> <td>10</td> <td>15</td> <td>20</td> <td>25</td></tr>
-	</table>
+	<div class="form-tabl">
+		<table class="container">
+			<div id="tabl">
+				<tr><th colspan="5">Таблица пифагора</th></tr>
+				<tr><th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th></tr>
+				<tr><td>2</td> <td>4</td> <td>6</td> <td>8</td> <td>10</td></tr>
+				<tr><td>3</td> <td>6</td> <td>9</td> <td>12</td> <td>15</td></tr>
+				<tr><td>4</td> <td>8</td> <td>12</td> <td>16</td> <td>20</td></tr>
+				<tr><td>5</td> <td>10</td> <td>15</td> <td>20</td> <td>25</td></tr>
+			</div>
+		</table>
 
-	<br>
+		<br>
 
-	<div class="container">
-		<div id="form">
-			<h2>Бланк регистрации</h2>
-			<br>
-			<form action="/" method="POST">
-				<b><label for="UserName">Имя пользователя:</label></b><br>
-				<input id="UserName" type="text" placeholder="Введите имя" name="UserName" required><br>
-			
-				<b><label for="userEmail">Email:</label></b><br>
-				<input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required><br>
-			
-				<b><label for="date">Дата рождения:</label></b><br>
-				<input id="date" type="date" name="UserDate" value="2003-08-28" required><br>
-			
-				<b>Пол:</b><br>
-				<input type="radio" id="man" name="gender" required>
-				<label for="man">Мужской</label><br>
-				<input type="radio" id="woman" name="gender" required>
-				<label for="woman">Женский</label><br>
-			
-				<b>Количество конечностей:</b><br>
-				<input type="radio" id="1-" name="limbs" required>
-				<label for="1-">1</label> <br>
-				<input type="radio" id="2-" name="limbs" required>
-				<label for="2-">2</label> <br>
-				<input type="radio" id="3-" name="limbs" required>
-				<label for="3-">3</label> <br>
-				<input type="radio" id="4-" name="limbs" required>
-				<label for="4-">4</label> <br>
-			
-				<b><label for="superpowers">Сверхспособности:</label></b><br>
-				<select id="superpowers" name="superpower" multiple="multiple">
-					<option value="Missing">Отсутствуют</option>
-					<option value="Immortality">Бессмертие</option>
-					<option value="Passing">Прохождение сквозь стены</option>
-					<option value="Levitation">Левитация</option>
-				</select><br>
-			
-				<b><label for="bio">Биография:</label></b><br>
-				<textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"></textarea><br>
-			
-				<b><label for="introduction"><input type="checkbox" id="introduction" name="introduction" required>С контрактом ознакомлен(а)</label></b><br>
-			
-				<input type="submit" value="Отправить" />
-			</form>
+		<div class="container flexform">
+			<div id="form">
+				<h2>Бланк регистрации</h2>
+				<br>
+				<form action="/" method="POST">
+					<b><label for="UserName">Имя пользователя:</label></b><br>
+					<input id="UserName" type="text" placeholder="Введите имя" name="UserName" required><br>
+				
+					<b><label for="userEmail">Email:</label></b><br>
+					<input id="userEmail" type="email" placeholder="Введите почту" name="UserEmail" required><br>
+				
+					<b><label for="date">Дата рождения:</label></b><br>
+					<input id="date" type="date" name="UserDate" value="2003-08-28" required><br>
+				
+					<b>Пол:</b><br>
+					<input type="radio" id="man" name="gender" required>
+					<label for="man">Мужской</label><br>
+					<input type="radio" id="woman" name="gender" required>
+					<label for="woman">Женский</label><br>
+				
+					<b>Количество конечностей:</b><br>
+					<input type="radio" id="1-" name="limbs" required>
+					<label for="1-">1</label> <br>
+					<input type="radio" id="2-" name="limbs" required>
+					<label for="2-">2</label> <br>
+					<input type="radio" id="3-" name="limbs" required>
+					<label for="3-">3</label> <br>
+					<input type="radio" id="4-" name="limbs" required>
+					<label for="4-">4</label> <br>
+				
+					<b><label for="superpowers">Сверхспособности:</label></b><br>
+					<select id="superpowers" name="superpower" multiple="multiple">
+						<option value="Missing">Отсутствуют</option>
+						<option value="Immortality">Бессмертие</option>
+						<option value="Passing">Прохождение сквозь стены</option>
+						<option value="Levitation">Левитация</option>
+					</select><br>
+				
+					<b><label for="bio">Биография:</label></b><br>
+					<textarea name="biog" id="bio" cols="30" rows="10" placeholder="Введите биографию"></textarea><br>
+				
+					<b><label for="introduction"><input type="checkbox" id="introduction" name="introduction" required>С контрактом ознакомлен(а)</label></b><br>
+				
+					<input type="submit" value="Отправить" />
+				</form>
+			</div>
 		</div>
 	</div>
 	<footer id="footer">
