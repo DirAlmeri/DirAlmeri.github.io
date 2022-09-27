@@ -119,14 +119,6 @@ a:hover {
 		padding: 2vw; /* отступы и поля */
 	}
 
-	#tabl {
-        order: 1; /* порядок в выводе */
-    }
-
-    #form {
-        order: 2; /* порядок в выводе */
-	}
-
 	#container {
         font-size: 13pt; /* размер слов */
 	}
@@ -134,10 +126,12 @@ a:hover {
 
 @media (max-width: 1200px){
 	#tabl {
+		display: flex;
 		order: 2; /* порядок в выводе */
 	}
 	
 	#form {
+		display: flex;
 		order: 1; /* порядок в выводе */
 	}
 }
