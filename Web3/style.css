@@ -46,7 +46,7 @@ html {
 /* в основном ссылки */
 #header, #hyperlinks {
 	margin-bottom: 20px; /* отступ снизу*/
-	padding: 8vw; /* отступы и поля */
+	padding: 7vw; /* отступы и поля */
 }
 
 #hyperlinks {
