@@ -64,7 +64,7 @@ table {
 td, th {
 	width: 150px;
 	padding: 5px; /* отступы и поля */
-	font-size: 40px; /* рамер слов */
+	font-size: 30px; /* рамер слов */
 }
 
 tr:nth-child(odd) {
