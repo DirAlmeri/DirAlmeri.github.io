@@ -64,7 +64,7 @@ table {
 td, th {
 	width: 150px;
 	padding: 5px; /* отступы и поля */
-	font-size: 15px; /* рамер слов */
+	font-size: 30px; /* рамер слов */
 }
 
 tr:nth-child(odd) {
@@ -125,7 +125,9 @@ a:hover {
 /*  */
 @media screen and (min-width: 1200px) { /* !!! */
 	.container {max-width: 960px;}
-	
+	td, th {
+		font-size: 15px; /* рамер слов */
+	}
 	.flexform{
 		order: 0; /* порядок вывода */
 	}
