@@ -64,7 +64,7 @@ table {
 td, th {
 	width: 150px;
 	padding: 5px; /* отступы и поля */
-	font-size: 15px; /* рамер слов */
+	font-size: 40px; /* рамер слов */
 }
 
 tr:nth-child(odd) {
@@ -82,6 +82,7 @@ tr:nth-child(even) {
 	border: 8px solid #f7b186; /* цвет */
 	margin: 0 auto; /* отступы */
 	margin-bottom: 20PX;
+	font-size: 40px; /* рамер слов */
 }
 
 /* подвал ссайта */
@@ -125,6 +126,10 @@ a:hover {
 /*  */
 @media screen and (min-width: 1200px) { /* !!! */
 	.container {max-width: 960px;}
+	
+	td, th, form {
+		font-size: 15px; /* рамер слов */
+	}
 	
 	.flexform{
 		order: 0; /* порядок вывода */
