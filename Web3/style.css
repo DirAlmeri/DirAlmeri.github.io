@@ -82,6 +82,7 @@ tr:nth-child(even) {
 	border: 8px solid #f7b186; /* цвет */
 	margin: 0 auto; /* отступы */
 	margin-bottom: 20PX;
+	font-size: 35px; /* рамер слов */
 }
 
 /* подвал ссайта */
@@ -125,6 +126,9 @@ a:hover {
 /*  */
 @media screen and (min-width: 1200px) { /* !!! */
 	.container {max-width: 960px;}
+	#form{
+		font-size: medium; /* рамер слов */
+	}
 	td, th {
 		font-size: 15px; /* рамер слов */
 	}
