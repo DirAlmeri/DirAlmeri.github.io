@@ -55,7 +55,7 @@ html {
 }
 
 /* таблица */
-table {
+.table {
 	border: 8px solid #F2B996; /* рамка и ее цвет */
 	text-align: center; /* выравнивание текста */
 	border-collapse: collapse; /* внутринние границы в таблице */
