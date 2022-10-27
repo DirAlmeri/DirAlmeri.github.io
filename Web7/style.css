@@ -55,6 +55,7 @@ a:hover {
 }
 
 #slidelinks img {
+	width: 100%;
 	border: 7px solid #f7b186;
 }
 
